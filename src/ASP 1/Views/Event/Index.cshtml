@@ -1,0 +1,29 @@
+﻿@model ASP_1.Models.Entities.Event
+
+@using (Html.BeginForm())
+{
+    <div>
+        Event Date
+        @Html.EditorFor(x => x.Date)
+    </div>
+    <div>
+        Start Date
+        @Html.EditorFor(x => x.StartTime)
+    </div>
+<div>
+        End Date
+        @Html.EditorFor(x => x.EndTime)
+    </div>
+    <div>
+        Name
+        @Html.EditorFor(x => x.Name)
+    </div>
+    <div>
+        Event Type
+        @*@Html.DropDownListFor((x => x.Type), new List<string>() { "Birthday", "Funeral", "Dance"})*@
+    </div>
+    <div>
+        Participants
+        @Html.EditorFor(x=> x.Participants)
+    </div>
+}
